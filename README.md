@@ -1,4 +1,4 @@
-##How to communicate with LLMs effectively(Prompting)? 
+How to communicate with LLMs effectively(Prompting)? 
 
 Let's first understand various prompting methods.
 
