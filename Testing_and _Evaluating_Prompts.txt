@@ -1,0 +1,91 @@
+Testing and Evaluating Prompts
+
+1) The first step in testing and evaluating is defining the success criteria of the applications.
+ Good success criteria are: 
+Framework Components
+Specific: Precisely define what you're measuring, not just the general goal
+
+Bad: "The model should work well"
+Good: "The model should correctly identify spam emails"
+
+Measurable: Use quantifiable metrics or consistent qualitative scales
+
+Bad: "High accuracy"
+Good: "Accuracy ≥ 92%" or "Expert rating ≥ 4/5 on defined rubric"
+
+Achievable: Set realistic targets based on current capabilities and constraints
+
+Bad: "100% accuracy" (usually impossible)
+Good: "5-10% improvement over current baseline"
+
+Relevant: Align with actual user needs and business objectives
+
+Bad: Using academic metrics that don't reflect real-world performance
+Good: Metrics that directly impact user experience or business goals
+
+2) Designing evaluations to measure LLM performance against those success criteria:
+Edge cases to consider while developing test cases:
+Irrelevant or nonexistent input data
+Overly long input data or user input
+[Chat use cases] Poor, harmful, or irrelevant user input
+Ambiguous test cases where even humans would find it hard to reach an assessment consensus
+
+Exact match Evaluation:
+Perfect for: When there's only one right answer
+Example: "What's 2 + 2?"
+Model says "4" → Correct!
+Model says "four" → Wrong! (even though it means the same thing)
+
+Similarity Check - Cosine similarity
+Cosine similarity measures the similarity between two vectors by computing the cosine of the angle between them. Values closer to 1 indicate higher similarity. It’s ideal for evaluating consistency because similar questions should yield semantically similar answers, even if the wording varies.
+Good when: When answers should be similar but don't need to be identical
+Example: Asking "How do I return something?" three different ways:
+
+"What's your return policy?"
+"Can I bring back my purchase?"
+"How do returns work?"
+
+ROUGE-L Evaluation
+When to use: Summarization and content generation
+Think of ROUGE-L like checking if someone gave you a good book summary by seeing how much of the important stuff they kept in the right order.
+ROUGE-L = "How well did you capture the main ideas in the right sequence?"
+example:
+"Scientists at Stanford University announced yesterday that they have developed a new battery technology that can charge electric vehicles in just 5 minutes. The breakthrough could revolutionize transportation and reduce range anxiety for EV owners."
+
+answer
+Good Summary (High ROUGE-L):
+
+"Stanford scientists developed new battery technology that charges electric vehicles in 5 minutes, potentially revolutionizing transportation."
+
+The above is a good summary because it keeps the key sequence: "Stanford scientists developed new battery technology."
+Maintains order: "Charge electric vehicles"
+Preserves the main idea flow
+
+3) Selection of Grading Evaluation:
+
+Code-based grading: Fastest and most reliable, extremely scalable, but also lacks nuance for more complex judgements that require less rule-based rigidity.
+
+Exact match: output == golden_answer
+String match: key_phrase in output
+
+Human grading: Most flexible and high quality, but slow and expensive. Avoid if possible.
+
+LLM-based grading: Fast and flexible, scalable, and suitable for complex judgment. Test to ensure reliability first, then scale.
+
+4) The final step is to reduce Latency.
+
+Latency refers to the time it takes for the model to process a prompt and generate an output. Latency can be influenced by various factors, such as the size of the model, the complexity of the prompt, and the underlying infrastructure supporting the model and point of interaction.
+
+How to measure latency:
+Baseline latency: This is the time taken by the model to process the prompt and generate the response, without considering the input and output tokens per second. It provides a general idea of the model’s speed.
+Time to first token (TTFT): This metric measures the time it takes for the model to generate the first token of the response, from when the prompt was sent. It’s particularly relevant when you’re using streaming (more on that later) and want to provide a responsive experience to your users.
+
+How to reduce latency:
+Choose the right model
+Optimize the prompt and output length
+
+5) Using the evaluation tool:
+
+Claude Workbench-->Anthropic's platform for systematic prompt development and evaluation
+
+OpenAI Evals --> Evals provide a framework for evaluating large language models (LLMs) or systems built using LLMs.
