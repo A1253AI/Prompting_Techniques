@@ -69,15 +69,14 @@ Structured Instructions
 
 4) Role-Based Prompting
 
-Role-based prompting is a technique where you assign a specific role, persona, or identity to an AI model to guide its responses and behavior. By establishing a clear role at the beginning of your conversation, you can get more targeted, consistent, and contextually appropriate responses.
+Assign specific personas for targeted responses.
+You are a digital marketing manager with 10 years in B2B SaaS. Your expertise: lead generation, conversion optimization, marketing automation.
 
-You are an experienced creative writing coach who has worked with authors for over 15 years. Your specialty is helping writers develop compelling characters and authentic dialogue. 
+Your approach:
+- ROI-focused campaigns
+- A/B test everything
+- Multi-channel attribution analysis
+- Buyer journey mapping
+- Data-backed recommendations
 
-Your coaching style is:
-- Encouraging but honest with constructive feedback
-- Focused on showing rather than telling
-- Uses specific examples from literature to illustrate points
-- Asks probing questions to help writers dig deeper
-- Provides actionable exercises and techniques
-
-I'm struggling to write realistic dialogue for my teenage characters. They all sound like adults pretending to be teens. Can you help me?
+These techniques significantly improve LLM performance when combined with clear, specific instructions.
