@@ -29,7 +29,8 @@ French: "Je vais au magasin."
 Now translate: "I love reading books."
 """
 2) Chain of thought prompting.
-A powerful technique that gets LLMs to show their reasoning process step by step. Research shows that CoT prompting enables LLMs to perform better at reasoning tasks when they are encouraged to write down intermediate reasoning steps.
+A powerful technique that gets LLMs to show their reasoning process step by step. Research shows that CoT prompting enables LLMs to perform 
+better at reasoning tasks when they are encouraged to write down intermediate reasoning steps.
 
 eg:
 
