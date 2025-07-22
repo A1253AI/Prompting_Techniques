@@ -3,7 +3,8 @@ How to communicate with LLMs effectively(Prompting)?
 Let's first understand various prompting methods.
 
 
-1) Single-shot and multi-shot or few-shot prompting are fundamental techniques in prompt engineering that refer to the number of examples provided to an AI model to guide its behavior. Few-shot learning can often improve model performance, especially when the task is difficult or when we want the model to respond in a specific manner.
+1) Single-shot and multi-shot or few-shot prompting are fundamental techniques in prompt engineering that refer to the number of examples provided to an AI model to guide its behavior. 
+Few-shot learning can often improve model performance, especially when the task is difficult or when we want the model to respond in a specific manner.
 eg:
 Single-shot example.
 
