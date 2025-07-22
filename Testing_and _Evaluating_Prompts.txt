@@ -1,6 +1,6 @@
 Testing and Evaluating Prompts
 
-1) The first step in testing and evaluating prompt  is defining the success criteria of the applications.
+**1) The first step in testing and evaluating prompt  is defining the success criteria of the applications.**  
 Good success criteria are: 
 Framework Components
 Specific: Precisely define what you're measuring, not just the general goal
