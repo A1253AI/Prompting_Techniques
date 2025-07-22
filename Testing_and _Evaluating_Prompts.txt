@@ -37,7 +37,8 @@ Model says "4" → Correct!
 Model says "four" → Wrong! (even though it means the same thing)
 
 Similarity Check - Cosine similarity
-Cosine similarity measures the similarity between two vectors by computing the cosine of the angle between them. Values closer to 1 indicate higher similarity. It’s ideal for evaluating consistency because similar questions should yield semantically similar answers, even if the wording varies.
+Cosine similarity measures the similarity between two vectors by computing the cosine of the angle between them. Values closer to 1 indicate higher similarity.
+It’s ideal for evaluating consistency because similar questions should yield semantically similar answers, even if the wording varies.
 Good when: When answers should be similar but don't need to be identical
 Example: Asking "How do I return something?" three different ways:
 
