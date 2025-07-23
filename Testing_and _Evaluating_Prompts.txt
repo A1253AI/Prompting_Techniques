@@ -23,7 +23,7 @@ Relevant: Align with actual user needs and business objectives
 Bad: Using academic metrics that don't reflect real-world performance
 Good: Metrics that directly impact user experience or business goals
 
-2) Designing evaluations to measure LLM performance against those success criteria:
+2) Designing evaluations to measure LLM performance against success criteria's defined above:
 Edge cases to consider while developing test cases:
 Irrelevant or nonexistent input data
 Overly long input data or user input
